@@ -1,8 +1,10 @@
 {
-  "name": "lv-devops",
+  "name": "jeam-devops",
   "version": "0.0.0",
   "main": "server.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "node server.js"
   },
   "dependencies": {
@@ -32,5 +34,8 @@
     "request": "^2.88.0",
     "socket.io": "^2.0.4",
     "zingchart-angularjs": "^1.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
